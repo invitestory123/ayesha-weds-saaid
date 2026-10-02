@@ -1,3 +1,23 @@
 /* Custom styles. Original form-submit handler removed (RSVP form no longer present). */
 
 #rec2487446153 { display: none !important; }
+
+/* Hero couple names font sizing */
+#rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
+  font-size: 60px !important;
+  line-height: 0.85 !important;
+}
+
+@media screen and (max-width: 480px) {
+  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
+    font-size: 54px !important;
+    line-height: 0.85 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
+    font-size: 48px !important;
+    line-height: 0.85 !important;
+  }
+}
