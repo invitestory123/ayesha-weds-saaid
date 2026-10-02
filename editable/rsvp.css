@@ -1,9 +1,3 @@
-@font-face {
-  font-family: RSVPScript;
-  src: url('../fonts/ImperialScript-Regul.woff') format('woff');
-  font-display: swap;
-}
-
 #email-rsvp {
   box-sizing: border-box;
   background: #f9f0e0;
@@ -69,137 +63,101 @@
   display: block;
   font-family: 'Cinzel', Georgia, serif;
   font-size: 15px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #a67d2b;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   border-bottom: 1px solid rgba(166, 125, 43, 0.3);
   padding-bottom: 6px;
   width: 100%;
 }
 
-#email-rsvp h2 {
-  font: 400 44px/1.15 RSVPScript, cursive;
-  color: #a67d2b;
-  margin: 4px 0 12px;
-}
-
-#email-rsvp .reply-note {
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #6a5140;
-  margin: 0 auto 10px;
-  max-width: 320px;
-}
-
-#email-rsvp .reply-deadline {
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 13.5px;
-  font-style: italic;
-  color: #6a5140;
-  margin: 0 auto 14px;
-}
-
-/* Form Layout */
-#email-rsvp .rsvp-form {
-  margin-top: 10px;
-  text-align: left;
-}
-
-#email-rsvp .rsvp-form label {
-  display: block;
+#email-rsvp .rsvp-host-name {
   font-family: 'Cinzel', Georgia, serif;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #8c7666;
-  margin: 12px 0 4px;
-}
-
-#email-rsvp .rsvp-form input,
-#email-rsvp .rsvp-form select {
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  min-height: 42px;
-  border: 1px solid #d9c9a8;
-  border-radius: 8px;
-  background: #fffdf9;
+  font-size: 21px;
+  font-weight: 600;
   color: #5a0f1b;
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 14px;
-  padding: 10px 12px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  margin: 12px 0 8px;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
 }
 
-#email-rsvp .rsvp-form input:focus-visible,
-#email-rsvp .rsvp-form select:focus-visible {
-  outline: 2px solid #a67d2b;
-  outline-offset: 1px;
+#email-rsvp .rsvp-contact-row {
+  margin: 6px auto 16px;
 }
 
-#email-rsvp .rsvp-form input::placeholder {
-  color: #8c7666;
-  opacity: 0.7;
-}
-
-#email-rsvp .rsvp-form small {
-  display: block;
-  font-size: 11px;
-  color: #8c7666;
-  margin-top: 4px;
-  font-family: 'Ovo', Georgia, serif;
-}
-
-/* WhatsApp RSVP Action Button */
-#email-rsvp .rsvp-form .rsvp-link {
-  display: flex;
+#email-rsvp .rsvp-phone-display {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
-  border: none;
-  background: #25D366;
-  color: #ffffff;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8c7666;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#email-rsvp .rsvp-phone-display:hover {
+  color: #5a0f1b;
+  transform: scale(1.02);
+}
+
+#email-rsvp .rsvp-phone-icon {
+  color: #a67d2b;
+  flex-shrink: 0;
+}
+
+#email-rsvp .rsvp-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+#email-rsvp .rsvp-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 18px;
   border-radius: 25px;
-  padding: 13px 20px;
   font-family: 'Cinzel', Georgia, serif;
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 18px auto 8px;
+  text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+  transition: all 0.2s ease;
   box-sizing: border-box;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
-#email-rsvp .rsvp-form .rsvp-link:hover {
+#email-rsvp .rsvp-whatsapp-btn {
+  background: #25D366;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.28);
+}
+
+#email-rsvp .rsvp-whatsapp-btn:hover {
   background: #20ba5a;
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.38);
 }
 
-#email-rsvp .rsvp-form .rsvp-link:active {
-  transform: translateY(1px);
+#email-rsvp .rsvp-call-btn {
+  background: transparent;
+  color: #5a0f1b;
+  border: 1.5px solid #a67d2b;
 }
 
-#email-rsvp .rsvp-form .rsvp-link:focus-visible {
-  outline: 3px solid #25D366;
-  outline-offset: 3px;
-}
-
-/* Helper Text */
-#email-rsvp .rsvp-form .rsvp-help {
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 12px;
-  line-height: 1.45;
-  color: #8c7666;
-  margin: 8px auto 2px;
-  text-align: center;
-  max-width: 300px;
+#email-rsvp .rsvp-call-btn:hover {
+  background: #a67d2b;
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 #email-rsvp [hidden] {
@@ -213,13 +171,16 @@
     padding: 5px;
   }
   #email-rsvp .reply-card {
-    padding: 20px 14px 20px;
+    padding: 20px 12px 20px;
   }
-  #email-rsvp h2 {
+  #email-rsvp .rsvp-host-name {
     font-size: 18px;
   }
-  #email-rsvp .rsvp-form .rsvp-link {
+  #email-rsvp .rsvp-phone-display {
+    font-size: 16px;
+  }
+  #email-rsvp .rsvp-action-btn {
     font-size: 10px;
-    padding: 12px 14px;
+    padding: 9px 12px;
   }
 }

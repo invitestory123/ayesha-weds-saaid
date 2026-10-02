@@ -12,17 +12,14 @@ window.WEDDING_DATA = {
 
   wedding: {
     dateLabel: "24.10.26",
-    dateISO: "2026-10-24T18:00:00+05:30",
+    dateISO: "2026-10-24T14:00:00+05:30",
     eventTitle: "Walima Celebration",
     invitationNote: "Dear Family & Friends,<br />With the grace of Almighty Allah, we cordially invite you to celebrate the Walima ceremony of <strong>Saaid Bashir</strong> & <strong>Ayesha Choudhary</strong> as they unite their lives in love, blessings, and faith.",
   },
 
   schedule: [
-    { title: "Guest Arrival", time: "7:00 PM" },
-    { title: "Walima Ceremony", time: "8:00 PM" },
-    { title: "Photos & Duas", time: "8:30 PM" },
-    { title: "Royal Dinner", time: "9:00 PM" },
-    { title: "Celebrations", time: "10:00 PM" },
+    { title: "Guest Arrival", time: "2:00 PM" },
+    { title: "Lunch", time: "2:30 PM" },
   ],
 
   venue: {
@@ -31,17 +28,13 @@ window.WEDDING_DATA = {
     mapsUrl: "https://share.google/dB7g1H3ZVYxp0CFsR",
   },
 
-  details: {
-    giftPreference: "Your presence, warm duas, and blessings are our most cherished gifts.",
-    dressCode: "Traditional & Elegant Festive Attire.",
-  },
+  details: {},
 
   rsvp: {
-    whatsapp: "9419063190",
+    title: "RSVP",
+    name: "Dr. Bashir ahmad Sanaie",
     phone: "+91 9419063190",
-    heading: "With joy, we await your reply",
-    note: "We would be honoured to have you grace the occasion with your presence and prayers.",
-    deadline: "October 20, 2026",
+    whatsapp: "9419063190",
   },
 
   media: {
