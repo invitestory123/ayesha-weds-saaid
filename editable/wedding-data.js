@@ -24,7 +24,7 @@ window.WEDDING_DATA = {
 
   venue: {
     name: "The Aagaz Resort",
-    address: "Pakhowal Road, Ludhiana, Punjab",
+    address: "Nowgam, Srinagar",
     mapsUrl: "https://share.google/dB7g1H3ZVYxp0CFsR",
   },
 
